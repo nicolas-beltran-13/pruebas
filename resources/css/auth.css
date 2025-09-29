@@ -1,0 +1,102 @@
+body {
+    background: url('img/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.login-container, .register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.login-form, .register-form {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 100, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-form h2, .register-form h2 {
+    color: #ff6600;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    color: #ff6600;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ff6600;
+    border-radius: 5px;
+    background: #111;
+    color: #fff;
+    font-size: 16px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #ff9900;
+    box-shadow: 0 0 10px rgba(255, 153, 0, 0.5);
+}
+
+.btn-login, .btn-register {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #ff6600, #ff9900);
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-login:hover, .btn-register:hover {
+    background: linear-gradient(to right, #ff9900, #ffcc00);
+}
+
+.register-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.register-link p {
+    color: #ff6600;
+    margin: 0;
+}
+
+.register-link a {
+    color: #ff6600;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    color: #ff9900;
+}
+
+/* CSS para ocultar navbar y footer si se requiere */
+.topbar, .navbar, .footer {
+    display: none !important;
+}
